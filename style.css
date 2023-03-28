@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    block-size: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body{
+    background-color: #ebf1ff;
+    overflow: hidden;
+}
+
+.container{
+    height: 530px;
+    width: 750px;
+    border-radius: 35px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 5px 20px rgb(139, 119, 194);
+    display: flex;
+    position: absolute;
+}
+
+.result{
+    width: 50%;
+    height: 100%;
+    border-radius: 35px;
+    background-color: #553df7;
+    color: #cbcafd;
+}
+
+.content{
+    padding: 56px;
+    text-align: center;
+}
+
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 37px auto 25px auto;
+    background-color: #4c23ca;
+    background-image: linear-gradient(#4c23ca, #553df7);
+}
+
+.number{
+    display: block;
+    color: white;
+    font-size: 75px;
+    font-weight: 800;
+    padding-top: 37px;
+}
+
+.number2{
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.425);
+    font-size: 18px;
+}
+
+.content > h1{
+    color: white;
+    margin-bottom: 25px;
+}
+
+.content > .text{
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.summary{
+    width: 50%;
+    height: 100%;
+    border-radius: 35px;
+    background-color: white;
+}
+
+.content2{
+    padding: 25px;
+}
+
+.content2 > h2{
+    color: #2d344e;
+}
+
+.reaction, .memory, .verbal, .visual{
+    margin-top: 20px;
+    padding: 20px 15px 20px 15px;
+    display: flex;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 10px;
+    position: relative;
+}
+
+img{
+    margin-right: 15px;
+}
+
+.porcentagem{
+    position: absolute;
+    right: 15px;
+}
+
+.porcen{
+    color: black;
+}
+
+.tagem{
+    color: #a9979b;
+}
+
+button{
+    width: 100%;
+    height: 60px;
+    margin-top: 40px;
+    color: white;
+    background-color: #303b59;
+    text-decoration: none;
+    border: none;
+    border-radius: 80px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #4c23ca;
+}
+
+.reaction{
+    background-color: #feeeee;
+    color: #ef5b63;
+}
+
+.memory{
+    background-color: #fff8e8;
+    color: #f2b352;
+}
+
+.verbal{
+    background-color: #e5f8f4;
+    color: #26b199;
+}
+
+.visual{
+    background-color: #e7e8fa;
+    color: #0b2ad2;
+}
+
+@media (max-width: 756px){
+    body{
+        background-color: white;
+        overflow-y: auto;
+    }
+    .container{
+        display: block;
+        box-shadow: none;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        border-radius: 0;
+    }
+
+    .result, .summary{
+        width: 100%;
+        border-radius: 0 0 35px 35px;
+    }
+}
